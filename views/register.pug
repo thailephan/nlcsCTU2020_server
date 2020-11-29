@@ -1,0 +1,15 @@
+h1 Register
+form(action="/customer/register", method="POST")
+    div
+        label(for = "name") Name
+        input#uName(type="text", name="name" placeholder = "Enter Name")
+    div
+        label(for = "password") Password
+        input#password(type="password", name="password" placeholder = "Enter Password")
+    div
+        label(for = "password2") Retype Password
+        input#rPassword(type="password", name="password2" placeholder = "Retype Password")
+    div
+        button(type="submit") Register
+p Have an Account?
+    a(href="/login") Login
